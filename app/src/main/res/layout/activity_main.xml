@@ -15,6 +15,16 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Page"
+            android:textSize="60sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            />
 
         <EditText
             android:layout_width="match_parent"
