@@ -1,6 +1,8 @@
 package com.example.signup
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.CheckBox
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +20,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // if condition
+    // function
+    public fun show_hide() {
+        findViewById<CheckBox>(R.id.cb_show)
+        .setOnCheckedChangeListener { show_hide, isChecked ->
+            // show password fields
+    }
+}
 
 }

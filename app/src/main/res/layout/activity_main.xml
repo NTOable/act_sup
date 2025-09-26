@@ -38,40 +38,38 @@
             android:hint="Email"
             android:textColor="@color/white"
             android:textSize="20sp"/>
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Gender"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="20sp"/>-->
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Username"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="20sp"/>-->
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Password"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="20sp"/>-->
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Confirm Password"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="20sp"/>-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_signup"
+        <Button android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@drawable/background"
             android:text="Sign In"
             />
-        <CheckBox
-            android:id="@+id/cb_show"
+        <CheckBox android:id="@+id/cb_show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Show Password"
