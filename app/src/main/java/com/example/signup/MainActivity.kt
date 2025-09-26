@@ -1,8 +1,9 @@
 package com.example.signup
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.CheckBox
+import android.widget.EditText
+import android.text.InputType
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,19 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+            // code to show password
+                // store user input
+            val onClick_cb_show = findViewById<CheckBox>(R.id.cb_show)
+            val user_pw = findViewById<EditText>(R.id.pw)
+            val user_cf_pw = findViewById<EditText>(R.id.cf_pw)
+                // listener
+                onClick_cb_show.setOnClickListener {
+                    user_pw.inputType = InputType.TYPE_CLASS_TEXT
+                    user_cf_pw.inputType = InputType.TYPE_CLASS_TEXT
         }
     }
-
-    // function
-    public fun show_hide() {
-        findViewById<CheckBox>(R.id.cb_show)
-        .setOnCheckedChangeListener { show_hide, isChecked ->
-            // show password fields
-    }
-}
-
 }
