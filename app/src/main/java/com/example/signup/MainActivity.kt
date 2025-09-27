@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
         val cb_show = findViewById<CheckBox>(R.id.cb_show)
         val field_pw = findViewById<EditText>(R.id.pw)
         val cf_pw = findViewById<EditText>(R.id.cf_pw)
-        val radg_gen = findViewById<RadioGroup>(R.id.rg_gen)
-        val radb_male = findViewById<RadioButton>(R.id.rb_male)
-        val radb_fem = findViewById<RadioButton>(R.id.rb_fem)
+        val rg_gen = findViewById<RadioGroup>(R.id.rg_gen)
+        val rb_male = findViewById<RadioButton>(R.id.rb_male)
+        val rb_fem = findViewById<RadioButton>(R.id.rb_fem)
         val btn_bd = findViewById<Button>(R.id.btn_bd)
         val field_bd = findViewById<TextView>(R.id.view_bd)
         val btn_su = findViewById<Button>(R.id.btn_su)
@@ -72,8 +72,8 @@ class MainActivity : AppCompatActivity() {
                     val user_bd = field_bd.text.toString()
 
                     val user_gd = when {
-                        radb_male.isChecked -> "Male"
-                        radb_fem.isChecked -> "Female"
+                        rb_male.isChecked -> "Male"
+                        rb_fem.isChecked -> "Female"
                         else -> "No Selection"
                     }
 
