@@ -5,14 +5,11 @@ import android.widget.*
 import android.text.InputType
 import android.widget.Button
 import android.widget.RadioButton
-import android.widget.RadioGroup
 import android.widget.TextView
 import android.app.DatePickerDialog
 import java.util.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         val cb_show = findViewById<CheckBox>(R.id.cb_show)
         val field_pw = findViewById<EditText>(R.id.pw)
         val cf_pw = findViewById<EditText>(R.id.cf_pw)
-        val rg_gen = findViewById<RadioGroup>(R.id.rg_gen)
         val rb_male = findViewById<RadioButton>(R.id.rb_male)
         val rb_fem = findViewById<RadioButton>(R.id.rb_fem)
         val btn_bd = findViewById<Button>(R.id.btn_bd)
