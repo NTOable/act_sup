@@ -25,41 +25,30 @@
             android:textColor="#000000"
             android:textSize="60sp"/>
 
-        <EditText
+        <EditText android:id="@+id/fn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:hint="Full Name"
-            android:inputType="text"
+            android:inputType="textPersonName"
             android:textColor="@color/white"
             android:textColorHint="#000000"
             android:textSize="20sp"/>
 
-        <EditText
+        <EditText android:id="@+id/em"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:hint="Email"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:textColor="@color/white"
             android:textColorHint="#000000"
             android:textSize="20sp"/>
 
-        <EditText
+        <EditText android:id="@+id/un"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:hint="Gender"
-            android:inputType="text"
-            android:textColor="@color/white"
-            android:textColorHint="#263238"
-            android:textSize="20sp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-
             android:hint="Username"
             android:inputType="text"
             android:textColor="@color/white"
@@ -88,7 +77,46 @@
             android:textColorHint="#37474F"
             android:textSize="20sp"/>
 
-        <Button android:id="@+id/btn_signup"
+        <RadioGroup
+            android:id="@+id/rg_gen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                />
+            <RadioButton
+                android:id="@+id/rb_fem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                />
+        </RadioGroup>
+
+        <TextView android:id="@+id/view_bd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="No date selected yet."
+            android:textColor="@color/black"
+            android:textColorHint="#000000"
+            android:textSize="16sp"
+            />
+
+        <Button android:id="@+id/btn_bd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Birthdate"
+            android:backgroundTint="@color/white"
+            android:textColorHint="#37474F"
+            android:textColor="@color/black"
+            />
+
+        <Button android:id="@+id/btn_su"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
